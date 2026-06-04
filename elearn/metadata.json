@@ -1,0 +1,8 @@
+{
+  "name": "Remix: Coding E-learning Platform",
+  "description": "A comprehensive full-stack coding e-learning platform with interactive lessons, quizzes, code editor, dashboards, and an AI assistant.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
