@@ -56,7 +56,7 @@
     }
   ],
   "passwords": {
-    "u-admin": "admin@123",
+    "u-admin":  "$2b$10$D1dWpM7E7EinhS8V8HSusuoMAdkihTURBL5XneC5obAPJQjDUbKqe",
     "u-inst1": "$2b$10$D1dWpM7E7EinhS8V8HSusuZuNHDUVNRlXJDsuf0GSfslXUNKEz2vq",
     "u-inst2": "$2b$10$D1dWpM7E7EinhS8V8HSusuZuNHDUVNRlXJDsuf0GSfslXUNKEz2vq",
     "u-stud1": "$2b$10$D1dWpM7E7EinhS8V8HSusuK/TaTpxxpuYl9XwL6QhbGuETqFX/tba",
