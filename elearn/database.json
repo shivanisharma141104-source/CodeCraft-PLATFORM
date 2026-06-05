@@ -52,7 +52,7 @@
       "role": "instructor",
       "approved": true,
       "avatar": "https://api.dicebear.com/7.x/pixel-art/svg?seed=SHIV123",
-      "createdAt": "2026-06-04T00:13:23.406Z"
+      "createdAt": "2026-06-04T00:13:23.572Z"
     }
   ],
   "passwords": {
@@ -114,333 +114,160 @@
     }
   ],
   "modules": [
-    {
-      "id": "m-py-1",
-      "courseId": "c-python",
-      "title": "Variables & Standard I/O",
-      "orderIndex": 1
-    },
-    {
-      "id": "m-py-2",
-      "courseId": "c-python",
-      "title": "Data Structures & Control Flows",
-      "orderIndex": 2
-    },
-    {
-      "id": "m-py-3",
-      "courseId": "c-python",
-      "title": "Object Oriented Programming (OOP)",
-      "orderIndex": 3
-    },
-    {
-      "id": "m-jv-1",
-      "courseId": "c-java",
-      "title": "Java Intro & JVM Architecture",
-      "orderIndex": 1
-    },
-    {
-      "id": "m-jv-2",
-      "courseId": "c-java",
-      "title": "Classes, Objects & Inheritance",
-      "orderIndex": 2
-    },
-    {
-      "id": "m-js-1",
-      "courseId": "c-js",
-      "title": "ES6 Syntax & Array Iterators",
-      "orderIndex": 1
-    },
-    {
-      "id": "m-js-2",
-      "courseId": "c-js",
-      "title": "Promises & Async/Await Pattern",
-      "orderIndex": 2
-    }
+    { "id": "m-py-1", "courseId": "c-python", "title": "Variables & Standard I/O", "orderIndex": 1 },
+    { "id": "m-py-2", "courseId": "c-python", "title": "Data Structures & Control Flows", "orderIndex": 2 },
+    { "id": "m-py-3", "courseId": "c-python", "title": "Object Oriented Programming (OOP)", "orderIndex": 3 },
+    { "id": "m-jv-1", "courseId": "c-java", "title": "Java Intro & JVM Architecture", "orderIndex": 1 },
+    { "id": "m-jv-2", "courseId": "c-java", "title": "Classes, Objects & Inheritance", "orderIndex": 2 },
+    { "id": "m-js-1", "courseId": "c-js", "title": "ES6 Syntax & Array Iterators", "orderIndex": 1 },
+    { "id": "m-js-2", "courseId": "c-js", "title": "Promises & Async/Await Pattern", "orderIndex": 2 }
   ],
   "lessons": [
     {
-      "id": "l-py-1",
-      "moduleId": "m-py-1",
-      "courseId": "c-python",
+      "id": "l-py-1", "moduleId": "m-py-1", "courseId": "c-python",
       "title": "Setting Up Python & Variables",
-      "videoUrl": "https://www.youtube.com/watch?v=kqtD5dpn9C8",
-      "youtubeId": "kqtD5dpn9C8",
-      "orderIndex": 1,
-      "duration": "10 mins",
-      "notesName": "Python_Installation_Guide.pdf",
-      "notesUrl": "/api/downloads/python_setup.pdf",
+      "videoUrl": "https://www.youtube.com/watch?v=kqtD5dpn9C8", "youtubeId": "kqtD5dpn9C8",
+      "orderIndex": 1, "duration": "10 mins",
+      "notesName": "Python_Installation_Guide.pdf", "notesUrl": "/api/downloads/python_setup.pdf",
       "sourceCode": "print(\"Welcome to Python!\")\nusername = \"Ciel\"\nprint(\"Hello,\", username)",
       "sourceCodeUrl": "/api/downloads/py-v1.py"
     },
     {
-      "id": "l-py-2",
-      "moduleId": "m-py-1",
-      "courseId": "c-python",
+      "id": "l-py-2", "moduleId": "m-py-1", "courseId": "c-python",
       "title": "Input Functions & Typings",
-      "videoUrl": "https://www.youtube.com/watch?v=kqtD5dpn9C8",
-      "youtubeId": "kqtD5dpn9C8",
-      "orderIndex": 2,
-      "duration": "15 mins",
-      "notesName": "Console_IO.doc",
-      "notesUrl": "/api/downloads/py_io.doc",
+      "videoUrl": "https://www.youtube.com/watch?v=kqtD5dpn9C8", "youtubeId": "kqtD5dpn9C8",
+      "orderIndex": 2, "duration": "15 mins",
+      "notesName": "Console_IO.doc", "notesUrl": "/api/downloads/py_io.doc",
       "sourceCode": "name = input(\"Enter name: \")\nprint(\"Greetings\", name)"
     },
     {
-      "id": "l-py-3",
-      "moduleId": "m-py-2",
-      "courseId": "c-python",
+      "id": "l-py-3", "moduleId": "m-py-2", "courseId": "c-python",
       "title": "Python Lists & Comprehensions",
-      "videoUrl": "https://www.youtube.com/watch?v=9OeznAkyQz4",
-      "youtubeId": "9OeznAkyQz4",
-      "orderIndex": 1,
-      "duration": "18 mins",
-      "notesName": "Lists_CheatSheet.pdf",
-      "notesUrl": "/api/downloads/py_lists.pdf",
-      "sourceCode": "# Dynamic lists\nnumbers = [1, 2, 3, 4, 5]\nsquares = [x**2 for x in numbers]\nprint(\"Squares:\", squares)"
+      "videoUrl": "https://www.youtube.com/watch?v=9OeznAkyQz4", "youtubeId": "9OeznAkyQz4",
+      "orderIndex": 1, "duration": "18 mins",
+      "notesName": "Lists_CheatSheet.pdf", "notesUrl": "/api/downloads/py_lists.pdf",
+      "sourceCode": "numbers = [1, 2, 3, 4, 5]\nsquares = [x**2 for x in numbers]\nprint(\"Squares:\", squares)"
     },
     {
-      "id": "l-jv-1",
-      "moduleId": "m-jv-1",
-      "courseId": "c-java",
+      "id": "l-jv-1", "moduleId": "m-jv-1", "courseId": "c-java",
       "title": "Understanding JDK, JRE, & JVM",
-      "videoUrl": "https://www.youtube.com/watch?v=eIrMbAQSU34",
-      "youtubeId": "eIrMbAQSU34",
-      "orderIndex": 1,
-      "duration": "20 mins",
-      "notesName": "Java_Architecture.pdf",
-      "notesUrl": "/api/downloads/java_jvm.pdf",
+      "videoUrl": "https://www.youtube.com/watch?v=eIrMbAQSU34", "youtubeId": "eIrMbAQSU34",
+      "orderIndex": 1, "duration": "20 mins",
+      "notesName": "Java_Architecture.pdf", "notesUrl": "/api/downloads/java_jvm.pdf",
       "sourceCode": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello from JVM!\");\n    }\n}"
     },
     {
-      "id": "l-js-1",
-      "moduleId": "m-js-1",
-      "courseId": "c-js",
+      "id": "l-js-1", "moduleId": "m-js-1", "courseId": "c-js",
       "title": "Arrow Functions & Let/Const Scope",
-      "videoUrl": "https://www.youtube.com/watch?v=W6NZfCO5SIk",
-      "youtubeId": "W6NZfCO5SIk",
-      "orderIndex": 1,
-      "duration": "12 mins",
-      "notesName": "ES6_Scope_Variables.ppt",
-      "notesUrl": "/api/downloads/es6_scope.ppt",
+      "videoUrl": "https://www.youtube.com/watch?v=W6NZfCO5SIk", "youtubeId": "W6NZfCO5SIk",
+      "orderIndex": 1, "duration": "12 mins",
+      "notesName": "ES6_Scope_Variables.ppt", "notesUrl": "/api/downloads/es6_scope.ppt",
       "sourceCode": "const greet = (name) => `Hi ${name}!`;\nconsole.log(greet(\"Developer\"));"
     },
     {
-      "id": "l-js-2",
-      "moduleId": "m-js-2",
-      "courseId": "c-js",
+      "id": "l-js-2", "moduleId": "m-js-2", "courseId": "c-js",
       "title": "Understanding Promises & Microtasks",
-      "videoUrl": "https://www.youtube.com/watch?v=vV_Wb0bS8_g",
-      "youtubeId": "vV_Wb0bS8_g",
-      "orderIndex": 1,
-      "duration": "25 mins",
-      "notesName": "Promises_Handout.pdf",
-      "notesUrl": "/api/downloads/js_promises.pdf",
+      "videoUrl": "https://www.youtube.com/watch?v=vV_Wb0bS8_g", "youtubeId": "vV_Wb0bS8_g",
+      "orderIndex": 1, "duration": "25 mins",
+      "notesName": "Promises_Handout.pdf", "notesUrl": "/api/downloads/js_promises.pdf",
       "sourceCode": "const delay = (ms) => new Promise(res => setTimeout(res, ms));\ndelay(1000).then(() => console.log(\"Promise Resolved!\"));"
     }
   ],
   "quizzes": [
-    {
-      "id": "q-py-1",
-      "courseId": "c-python",
-      "title": "Variables & Input Quiz",
-      "durationMinutes": 10
-    },
-    {
-      "id": "q-js-1",
-      "courseId": "c-js",
-      "title": "Arrow Functions Quiz",
-      "durationMinutes": 5
-    }
+    { "id": "q-py-1", "courseId": "c-python", "title": "Variables & Input Quiz", "durationMinutes": 10 },
+    { "id": "q-js-1", "courseId": "c-js", "title": "Arrow Functions Quiz", "durationMinutes": 5 }
   ],
   "questions": [
     {
-      "id": "qq-py-1",
-      "quizId": "q-py-1",
+      "id": "qq-py-1", "quizId": "q-py-1",
       "questionText": "Which statement is true to output 'Hello' in Python?",
-      "options": [
-        "console.log('Hello')",
-        "print('Hello')",
-        "System.out.println('Hello')",
-        "cout << 'Hello';"
-      ],
+      "options": ["console.log('Hello')", "print('Hello')", "System.out.println('Hello')", "cout << 'Hello';"],
       "correctAnswerIndex": 1,
       "explanation": "Python uses the print() function to write output directly to the standard output terminal."
     },
     {
-      "id": "qq-py-2",
-      "quizId": "q-py-1",
+      "id": "qq-py-2", "quizId": "q-py-1",
       "questionText": "How do you declare a variable called 'x' with the integer value 5 in Python?",
-      "options": [
-        "int x = 5",
-        "var x = 5",
-        "x = 5",
-        "let x: 5"
-      ],
+      "options": ["int x = 5", "var x = 5", "x = 5", "let x: 5"],
       "correctAnswerIndex": 2,
       "explanation": "Python is dynamically typed; variable initialization requires no keywords or type declarations."
     },
     {
-      "id": "qq-js-1",
-      "quizId": "q-js-1",
+      "id": "qq-js-1", "quizId": "q-js-1",
       "questionText": "What is the primary difference between 'let' and 'var' declarations in JS?",
-      "options": [
-        "'let' is block-scoped, while 'var' is function-scoped",
-        "'var' cannot be updated",
-        "'let' is pushed to the global window always",
-        "There is no difference"
-      ],
+      "options": ["'let' is block-scoped, while 'var' is function-scoped", "'var' cannot be updated", "'let' is pushed to the global window always", "There is no difference"],
       "correctAnswerIndex": 0,
       "explanation": "Variables declared with 'let' are block-scoped. 'var' variables do not respect block bounds and are function-scoped."
     }
   ],
   "notes": [
     {
-      "id": "n-py",
-      "title": "Python OOP and Magic Methods Cheat Sheet",
-      "category": "Python",
-      "content": "# Python Object-Oriented Syntax\n\n```python\nclass CodingPlatform:\n    def __init__(self, name):\n        self.name = name\n        \n    def __str__(self):\n        return f\"Platform: {self.name}\"\n```\n\n### Magic Methods\n- `__init__`: Constructor called upon object instanciation.\n- `__str__`: Returns standard printable string representation.\n- `__repr__`: Rich developer-facing inspection expression.\n- `__len__`: Overrides the `len()` global call.",
-      "downloadsCount": 145,
-      "fileName": "Python_OOP_Cheatsheet.pdf",
-      "fileUrl": "/api/downloads/py_oop.pdf",
-      "fileType": "pdf"
+      "id": "n-py", "title": "Python OOP and Magic Methods Cheat Sheet", "category": "Python",
+      "content": "# Python Object-Oriented Syntax\n\n```python\nclass CodingPlatform:\n    def __init__(self, name):\n        self.name = name\n    def __str__(self):\n        return f\"Platform: {self.name}\"\n```\n\n### Magic Methods\n- `__init__`: Constructor called upon object instanciation.\n- `__str__`: Returns standard printable string representation.\n- `__repr__`: Rich developer-facing inspection expression.\n- `__len__`: Overrides the `len()` global call.",
+      "downloadsCount": 145, "fileName": "Python_OOP_Cheatsheet.pdf", "fileUrl": "/api/downloads/py_oop.pdf", "fileType": "pdf"
     },
     {
-      "id": "n-js",
-      "title": "JavaScript ES6+ Array Iterators Guide",
-      "category": "JavaScript",
-      "content": "# JS Array Iterators Map, Filter & Reduce\n\nUse declarative programming styles:\n\n```javascript\nconst items = [12, 45, 78, 90];\n// Map\nconst doubleValues = items.map(x => x * 2);\n// Filter\nconst filtered = items.filter(x => x > 50);\n// Reduce\nconst summation = items.reduce((acc, curr) => acc + curr, 0);\n```\n\n### Key Concepts\n- **Immutable output**: Functions generate new instances rather than mutating initial state.\n- **Callback functions**: Lambda triggers inside array evaluation loop.",
-      "downloadsCount": 228,
-      "fileName": "JS_Iterator_Map_Filter.pdf",
-      "fileUrl": "/api/downloads/js_map_filter.pdf",
-      "fileType": "pdf"
+      "id": "n-js", "title": "JavaScript ES6+ Array Iterators Guide", "category": "JavaScript",
+      "content": "# JS Array Iterators Map, Filter & Reduce\n\n```javascript\nconst items = [12, 45, 78, 90];\nconst doubleValues = items.map(x => x * 2);\nconst filtered = items.filter(x => x > 50);\nconst summation = items.reduce((acc, curr) => acc + curr, 0);\n```",
+      "downloadsCount": 228, "fileName": "JS_Iterator_Map_Filter.pdf", "fileUrl": "/api/downloads/js_map_filter.pdf", "fileType": "pdf"
     }
   ],
   "papers": [
     {
-      "id": "qp-py",
-      "title": "2025 Python Advanced Final Term Examination Paper",
-      "category": "Python",
-      "year": 2025,
-      "examType": "Previous Year",
+      "id": "qp-py", "title": "2025 Python Advanced Final Term Examination Paper",
+      "category": "Python", "year": 2025, "examType": "Previous Year",
       "fileUrl": "/api/downloads/qp_py_2025.pdf",
-      "content": "### Examination Overview: Core Problems & Solutions\n\n**Q1: Implement a custom decorator @timer to measure runtime of any execution.**\n\n*Code Solution:*\n```python\nimport time\ndef timer(func):\n    def wrapper(*args, **kwargs):\n        start = time.time()\n        result = func(*args, **kwargs)\n        print(f\"Elapsed: {time.time() - start}s\")\n        return result\n    return wrapper\n```\n\n**Q2: What are python generator functions? Include yield implementation.**\n\n*Explanation:*\nGenerator functions return iterator objects using `yield` dynamically, saving memory allocation over bulky in-memory lists.",
-      "answerKeys": {
-        "Q1": "Code implementation for standard decorators using nested wrapper methods.",
-        "Q2": "Generators lazy load iterations step-by-step; they maintain local state index safely during yielding."
-      }
+      "content": "### Q1: Implement a custom decorator @timer\n```python\nimport time\ndef timer(func):\n    def wrapper(*args, **kwargs):\n        start = time.time()\n        result = func(*args, **kwargs)\n        print(f\"Elapsed: {time.time() - start}s\")\n        return result\n    return wrapper\n```",
+      "answerKeys": { "Q1": "Decorator using nested wrapper.", "Q2": "Generators use yield to lazy load." }
     },
     {
-      "id": "qp-ds",
-      "title": "Data Structures & Algorithms MCQ Question Bank",
-      "category": "Data Structures & Algorithms",
-      "year": 2024,
-      "examType": "MCQ Bank",
+      "id": "qp-ds", "title": "Data Structures & Algorithms MCQ Question Bank",
+      "category": "Data Structures & Algorithms", "year": 2024, "examType": "MCQ Bank",
       "fileUrl": "/api/downloads/qp_dsa.pdf",
-      "content": "### Data Structures High-Contrast Bank\n\n**Q1: Which complexity dictates Binary Search binary iterations in sorted bounds?**\n- A) O(N)\n- B) O(log N) [Correct]\n- C) O(N log N)\n- D) O(1)\n\n**Q2: What data structure maintains Last In First Out (LIFO) storage order?**\n- A) Queue\n- B) Heap\n- C) Stack [Correct]\n- D) Tri-tree",
-      "answerKeys": {
-        "Q1": "B",
-        "Q2": "C"
-      }
+      "content": "### Q1: Binary Search complexity?\n- B) O(log N) [Correct]\n\n### Q2: LIFO structure?\n- C) Stack [Correct]",
+      "answerKeys": { "Q1": "B", "Q2": "C" }
     }
   ],
   "progress": [
     {
-      "id": "prg-py-seed",
-      "userId": "u-stud1",
-      "courseId": "c-python",
-      "completedLessonIds": [
-        "l-py-1",
-        "l-py-3"
-      ],
-      "quizAttempts": {
-        "q-py-1": {
-          "score": 1,
-          "total": 1,
-          "date": "2026-06-03T18:30:00.000Z"
-        }
-      },
+      "id": "prg-py-seed", "userId": "u-stud1", "courseId": "c-python",
+      "completedLessonIds": ["l-py-1", "l-py-3"],
+      "quizAttempts": { "q-py-1": { "score": 1, "total": 1, "date": "2026-06-03T18:30:00.000Z" } },
       "updatedAt": "2026-06-03T18:35:00.000Z"
     },
     {
-      "id": "prg-js-seed",
-      "userId": "u-stud1",
-      "courseId": "c-js",
-      "completedLessonIds": [
-        "l-js-1"
-      ],
-      "quizAttempts": {
-        "q-js-1": {
-          "score": 2,
-          "total": 2,
-          "date": "2026-06-03T19:40:00.000Z"
-        }
-      },
+      "id": "prg-js-seed", "userId": "u-stud1", "courseId": "c-js",
+      "completedLessonIds": ["l-js-1"],
+      "quizAttempts": { "q-js-1": { "score": 2, "total": 2, "date": "2026-06-03T19:40:00.000Z" } },
       "updatedAt": "2026-06-03T19:42:00.000Z"
     },
-    {
-      "id": "prg-8q1ph4i",
-      "userId": "u-c6jizet",
-      "courseId": "c-python",
-      "completedLessonIds": [],
-      "quizAttempts": {},
-      "updatedAt": "2026-06-04T00:11:31.908Z"
-    },
-    {
-      "id": "prg-w5onqal",
-      "userId": "u-c6jizet",
-      "courseId": "c-java",
-      "completedLessonIds": [],
-      "quizAttempts": {},
-      "updatedAt": "2026-06-04T00:11:32.143Z"
-    },
-    {
-      "id": "prg-9lpeuok",
-      "userId": "u-c6jizet",
-      "courseId": "c-js",
-      "completedLessonIds": [],
-      "quizAttempts": {},
-      "updatedAt": "2026-06-04T00:11:32.372Z"
-    },
-    {
-      "id": "prg-ffip6fx",
-      "userId": "u-c6jizet",
-      "courseId": "c-react",
-      "completedLessonIds": [],
-      "quizAttempts": {},
-      "updatedAt": "2026-06-04T00:11:32.529Z"
-    }
+    { "id": "prg-8q1ph4i", "userId": "u-c6jizet", "courseId": "c-python", "completedLessonIds": [], "quizAttempts": {}, "updatedAt": "2026-06-04T00:11:31.908Z" },
+    { "id": "prg-w5onqal", "userId": "u-c6jizet", "courseId": "c-java", "completedLessonIds": [], "quizAttempts": {}, "updatedAt": "2026-06-04T00:11:32.143Z" },
+    { "id": "prg-9lpeuok", "userId": "u-c6jizet", "courseId": "c-js", "completedLessonIds": [], "quizAttempts": {}, "updatedAt": "2026-06-04T00:11:32.372Z" },
+    { "id": "prg-ffip6fx", "userId": "u-c6jizet", "courseId": "c-react", "completedLessonIds": [], "quizAttempts": {}, "updatedAt": "2026-06-04T00:11:32.529Z" }
   ],
   "comments": [
     {
-      "id": "c1",
-      "lessonId": "l-py-1",
-      "userId": "u-stud1",
-      "userName": "John Doe",
-      "userRole": "student",
+      "id": "c1", "lessonId": "l-py-1", "userId": "u-stud1",
+      "userName": "John Doe", "userRole": "student",
       "text": "This explanation is brilliant! Simple set up instructions made coding easily. Thanks",
       "createdAt": "2026-06-03T19:06:20.871Z"
     }
   ],
   "challenges": [
     {
-      "id": "chal-1",
-      "title": "Two Sum Problem",
+      "id": "chal-1", "title": "Two Sum Problem",
       "description": "Write a function that returns the indices of two numbers in an array that add up to a specific target.",
       "problem": "Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.",
       "category": "Data Structures & Algorithms",
       "startingCode": "function twoSum(nums, target) {\n  // Write your code here\n  return [];\n}",
-      "solutionCode": "function twoSum(nums, target) {\n  const map = new Map();\n  for (let i = 0; i < nums.length; i++) {\n    const complement = target - nums[i];\n    if (map.has(complement)) {\n      return [map.get(complement), i];\n    }\n    map.set(nums[i], i);\n  }\n  return [];\n}",
+      "solutionCode": "function twoSum(nums, target) {\n  const map = new Map();\n  for (let i = 0; i < nums.length; i++) {\n    const complement = target - nums[i];\n    if (map.has(complement)) return [map.get(complement), i];\n    map.set(nums[i], i);\n  }\n  return [];\n}",
       "testCases": [
-        {
-          "input": "[[2, 7, 11, 15], 9]",
-          "expectedOutput": "[0, 1]"
-        },
-        {
-          "input": "[[3, 2, 4], 6]",
-          "expectedOutput": "[1, 2]"
-        }
+        { "input": "[[2, 7, 11, 15], 9]", "expectedOutput": "[0, 1]" },
+        { "input": "[[3, 2, 4], 6]", "expectedOutput": "[1, 2]" }
       ],
       "date": "2026-06-03"
     }
-  ]
+  ],
+  "institutions": []
 }
